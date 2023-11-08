@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Digit Recognizer</title>
+</head>
+<body>
+    <header>
+        <h1>Digit Recognizer</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="grid-container">
+
+            <canvas id="drawingCanvas" width="280" height="280" style="border: 1px solid black; background-color: white;"></canvas>
+
+            <div id="button-container">
+
+                <button id="sendDrawing">Enviar Desenho</button>
+                <button id="clearCanvas">Limpar Desenho</button>
+                <script src="{{ url_for('static', filename='script.js') }}"></script>
+        
+            </div>
+
+        </div>
+        
+        <div id="textbox-container">
+
+                <div id="bigChar">Seu dígito é: <span id="digitoValor"></span></div>
+                <div id="number">Propabilidade da previsão: <span id="probabilidadeValor"></span>%</div>
+
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #FF66A3, #007BFF);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    height: 100vh;
+}
+
+header {
+    /* background-color: #1f1f1f; */
+    color: #fff;
+    text-align: center;
+    padding: 0px 0;
+}
+
+#button-container {
+    text-align: center;
+}
+
+#button-container, #drawingCanvas{
+    flex-direction: column;
+    margin: 5px;
+}
+
+#sendDrawing, #clearCanvas {
+    display: inline-block;
+    margin: 10px; /* Espaçamento entre os botões */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    background-color: #1265e0; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efeito de transição de cor ao passar o mouse */
+}
+
+#sendDrawing:hover, #clearCanvas:hover {
+    background-color: #023d7c; /* Cor do botão ao passar o mouse */
+}
+
+#textbox-container {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento acima dos elementos de texto */
+}
+
+#bigChar {
+    font-size: 40px; /* Tamanho grande para o caracter */
+    margin-bottom: 10px; /* Espaçamento abaixo do caracter */
+}
+
+#number {
+    font-size: 24px; /* Tamanho do número */
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#grid-container, #textbox-container{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.numero-container {
+    width: 280px;
+    height: 280px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 100px;
+}
